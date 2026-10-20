@@ -1,5 +1,7 @@
 # Gobuster
 
+https://github.com/OJ/gobuster
+
 Fast directory / vhost / DNS brute-force tool written in Go.
 
 ## Directory brute-force
