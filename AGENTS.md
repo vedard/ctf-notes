@@ -21,8 +21,11 @@ Repository for personal CTF competition notes.
         └── references.md  # category-specific links
 ```
 
-Categories: `pwn`, `web`, `mobile`, `forensic`, `crypto`, `rev`, `misc`, `osint`.
+Categories: `cloud`, `pwn`, `web`, `mobile`, `forensic`, `crypto`, `rev`, `misc`, `osint`, `steg`.
 Only categories with real content exist — create a directory when you add the first note.
+
+`forensic` = incident response (memory, event logs, pcaps, browser artifacts).
+`steg` = steganography and file carving.
 
 ## Conventions
 

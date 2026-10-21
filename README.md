@@ -11,8 +11,17 @@ Personal knowledge base for CTF competitions. Cross-category material lives at t
 
 - [cchef](tools/cchef.md) CyberChef on the command line
 - [CyberChef](tools/cyberchef.md) web app for encoding, decoding, hashing, and data analysis
+- [strings](tools/strings.md) print printable strings from any binary
 
 ## Categories
+
+### Cloud
+
+#### Tools
+
+- [AWS CLI](categories/cloud/tools/aws-cli.md) query and manage AWS resources
+- [Azure CLI](categories/cloud/tools/az.md) query and manage Azure resources (`az`)
+- [gcloud](categories/cloud/tools/gcloud.md) Google Cloud CLI
 
 ### Crypto
 
@@ -48,6 +57,7 @@ Personal knowledge base for CTF competitions. Cross-category material lives at t
 
 #### Tools
 
+- [checksec](categories/pwn/tools/checksec.md) show binary hardening (RELRO, canary, NX, PIE)
 - [pwndbg](categories/pwn/tools/pwndbg.md) gdb plugin for exploit development
 - [pwntools](categories/pwn/tools/pwntools.md) Python library for exploit development
 - [ROPgadget](categories/pwn/tools/ropgadget.md) search ROP and JOP gadgets in binaries
@@ -67,6 +77,15 @@ Personal knowledge base for CTF competitions. Cross-category material lives at t
 - [unluac](categories/rev/tools/unluac.md) decompile Lua bytecode
 - [unrpa / unrpyc](categories/rev/tools/unrpa.md) unpack Ren'Py archives and decompile scripts
 
+### Steg
+
+#### Tools
+
+- [binwalk](categories/steg/tools/binwalk.md) find and extract embedded files in a blob
+- [foremost](categories/steg/tools/foremost.md) carve embedded files by signature
+- [steghide](categories/steg/tools/steghide.md) hide/extract data in WAV, BMP, JPEG, AU files
+- [zsteg](categories/steg/tools/zsteg.md) detect steganography in PNG and BMP files
+
 ### Web
 
 #### Techniques
@@ -78,5 +97,6 @@ Personal knowledge base for CTF competitions. Cross-category material lives at t
 - [Burp Suite](categories/web/tools/burp.md) intercepting proxy and manual web testing suite
 - [Gobuster](categories/web/tools/gobuster.md) directory, vhost, and DNS brute-force
 - [HTTPie](categories/web/tools/httpie.md) user-friendly HTTP client
+- [sqlmap](categories/web/tools/sqlmap.md) automatic SQL injection detection and exploitation
 
 [references](categories/web/references.md)
