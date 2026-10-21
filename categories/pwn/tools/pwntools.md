@@ -2,7 +2,7 @@
 
 https://github.com/Gallopsled/pwntools
 
-Python library for exploit development: process/remote/ELF/ROP/packing helpers. See `cat/pwn/templates/solve.py`.
+Python library for exploit development: process/remote/ELF/ROP/packing helpers. See `categories/pwn/templates/solve.py`.
 
 ```python
 from pwn import *
