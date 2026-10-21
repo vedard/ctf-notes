@@ -50,4 +50,4 @@ The libc base is chosen from a small set of page-aligned addresses. Pick a candi
 ## Notes
 
 - Verify your libc matches the target (`ldd`/`libc.so.6` exactly); an off-by-version libc gives wrong offsets.
-- If a partial leak exists, prefer that over brute-forcing. See `categories/pwn/notes/ret2syscall.md` for the no-libc approach.
+- If a partial leak exists, prefer that over brute-forcing. See `categories/pwn/techniques/ret2syscall.md` for the no-libc approach.

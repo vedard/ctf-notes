@@ -36,7 +36,7 @@ syscall
 
 ## Notes
 
-- No syscall gadget but a usable libc? See `categories/pwn/notes/ret2libc-32-bruteforce.md`.
+- No syscall gadget but a usable libc? See `categories/pwn/techniques/ret2libc-32-bruteforce.md`.
 - `pop rdx; pop rbx; ret` and similar multi-pop gadgets are fine — pad the extra pops with junk.
 - Missing `pop rsi`/`pop rdx`? Look for `pop rsi; pop r15; ret` or `mov`/`xchg`-based alternatives.
 - 32-bit (`int 0x80`): args in `ebx` `ecx` `edx`; `execve` = 11.

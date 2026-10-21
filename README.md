@@ -1,55 +1,81 @@
 # CTF Notes
 
-Personal knowledge base for CTF competitions. Cross-category material lives at the top level; category-specific material under [`categories/`](categories/). Directory conventions are documented in [AGENTS.md](AGENTS.md).
+Personal knowledge base for CTF competitions. Cross-category material lives at the top level; category-specific material under [`categories/`](categories/). Conventions documented in [AGENTS.md](AGENTS.md).
 
-## Cross-category
+## Cross-Category
 
-- [references.md](references.md) — useful links (CTFtime, HackTricks, PayloadsAllTheThings, GTFOBins, writeup blog)
-- [snippets/shells.md](snippets/shells.md) — reverse shell stabilization
-- [tools/cchef.md](tools/cchef.md) — cchef — CyberChef on the command line
-- [tools/cyberchef.md](tools/cyberchef.md) — CyberChef — web app for encoding/decoding, hashing, data analysis
+- [Reverse Shell Stabilization](snippets/shells.md) stabilize a reverse shell
+- [references](references.md)
+
+### Tools
+
+- [cchef](tools/cchef.md) CyberChef on the command line
+- [CyberChef](tools/cyberchef.md) web app for encoding, decoding, hashing, and data analysis
 
 ## Categories
 
-### [crypto](categories/crypto/)
+### Crypto
 
-- [references.md](categories/crypto/references.md) — crypto links (dCode)
-- [tools/john.md](categories/crypto/tools/john.md) — John the Ripper — offline password cracker
+#### Tools
 
-### [forensic](categories/forensic/)
+- [John the Ripper](categories/crypto/tools/john.md) offline password cracker
 
-- [tools/chainsaw.md](categories/forensic/tools/chainsaw.md) — chainsaw — Windows Event Log / Sysmon triage
-- [tools/exiftool.md](categories/forensic/tools/exiftool.md) — exiftool — file metadata
-- [tools/hindsight.md](categories/forensic/tools/hindsight.md) — Hindsight — Chrome/Firefox browser artifact parser
-- [tools/rtptools.md](categories/forensic/tools/rtptools.md) — rtptools — replay RTP streams / rebuild media from pcaps
-- [tools/volatility3.md](categories/forensic/tools/volatility3.md) — Volatility 3 — memory dump forensics
-- [tools/wireshark.md](categories/forensic/tools/wireshark.md) — Wireshark — packet capture analysis
+[references](categories/crypto/references.md)
 
-### [osint](categories/osint/)
+### Forensic
 
-- [tools/sherlock.md](categories/osint/tools/sherlock.md) — Sherlock — hunt a username across hundreds of sites
+#### Tools
 
-### [pwn](categories/pwn/)
+- [chainsaw](categories/forensic/tools/chainsaw.md) Windows Event Log and Sysmon triage
+- [exiftool](categories/forensic/tools/exiftool.md) file metadata reader
+- [Hindsight](categories/forensic/tools/hindsight.md) Chrome and Firefox browser artifact parser
+- [rtptools](categories/forensic/tools/rtptools.md) replay RTP streams and rebuild media from pcaps
+- [Volatility 3](categories/forensic/tools/volatility3.md) memory dump forensics
+- [Wireshark](categories/forensic/tools/wireshark.md) packet capture analysis
 
-- [notes/ret2libc-32-bruteforce.md](categories/pwn/notes/ret2libc-32-bruteforce.md) — ret2libc (32-bit, libc-base brute-force) — no leak needed
-- [notes/ret2syscall.md](categories/pwn/notes/ret2syscall.md) — ret2syscall — ROP chain calling syscalls directly, bypassing libc
-- [templates/solve.py](categories/pwn/templates/solve.py) — pwntools exploit skeleton
-- [tools/pwndbg.md](categories/pwn/tools/pwndbg.md) — pwndbg — gdb plugin for exploit dev
-- [tools/pwntools.md](categories/pwn/tools/pwntools.md) — pwntools — Python library for exploit development
-- [tools/ropgadget.md](categories/pwn/tools/ropgadget.md) — ROPgadget — search ROP/JOP gadgets in binaries
+### OSINT
 
-### [rev](categories/rev/)
+#### Tools
 
-- [tools/dnspy.md](categories/rev/tools/dnspy.md) — dnSpy — decompile/debug .NET assemblies
-- [tools/ghidra.md](categories/rev/tools/ghidra.md) — Ghidra — RE suite, decompile native binaries
-- [tools/jadx.md](categories/rev/tools/jadx.md) — JADX — decompile Android APKs
-- [tools/pycdc.md](categories/rev/tools/pycdc.md) — pycdc (Decompyle++) — decompile Python `.pyc` files
-- [tools/unluac.md](categories/rev/tools/unluac.md) — unluac — decompile Lua bytecode
-- [tools/unrpa.md](categories/rev/tools/unrpa.md) — unrpa / unrpyc — unpack Ren'Py archives, decompile scripts
+- [Sherlock](categories/osint/tools/sherlock.md) find a username across hundreds of sites
 
-### [web](categories/web/)
+### Pwn
 
-- [notes/dynamic-linq-injection.md](categories/web/notes/dynamic-linq-injection.md) — Dynamic LINQ injection (.NET)
-- [references.md](categories/web/references.md) — web links (CSP bypass)
-- [tools/gobuster.md](categories/web/tools/gobuster.md) — Gobuster — directory / vhost / DNS brute-force
-- [tools/httpie.md](categories/web/tools/httpie.md) — HTTPie — user-friendly HTTP client
+#### Techniques
+
+- [ret2libc (32-bit, libc-base brute-force)](categories/pwn/techniques/ret2libc-32-bruteforce.md) ret2libc without a leak by brute-forcing the libc base
+- [ret2syscall](categories/pwn/techniques/ret2syscall.md) ROP chain calling syscalls directly, bypassing libc
+
+#### Tools
+
+- [pwndbg](categories/pwn/tools/pwndbg.md) gdb plugin for exploit development
+- [pwntools](categories/pwn/tools/pwntools.md) Python library for exploit development
+- [ROPgadget](categories/pwn/tools/ropgadget.md) search ROP and JOP gadgets in binaries
+
+#### Templates
+
+- [solve.py](categories/pwn/templates/solve.py) pwntools exploit skeleton
+
+### Rev
+
+#### Tools
+
+- [dnSpy](categories/rev/tools/dnspy.md) decompile and debug .NET assemblies
+- [Ghidra](categories/rev/tools/ghidra.md) RE suite for native binaries
+- [JADX](categories/rev/tools/jadx.md) decompile Android APKs
+- [pycdc (Decompyle++)](categories/rev/tools/pycdc.md) decompile Python `.pyc` files
+- [unluac](categories/rev/tools/unluac.md) decompile Lua bytecode
+- [unrpa / unrpyc](categories/rev/tools/unrpa.md) unpack Ren'Py archives and decompile scripts
+
+### Web
+
+#### Techniques
+
+- [Dynamic LINQ injection (.NET)](categories/web/techniques/dynamic-linq-injection.md) injection into `System.Linq.Dynamic.Core` query strings
+
+#### Tools
+
+- [Gobuster](categories/web/tools/gobuster.md) directory, vhost, and DNS brute-force
+- [HTTPie](categories/web/tools/httpie.md) user-friendly HTTP client
+
+[references](categories/web/references.md)
