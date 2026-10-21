@@ -12,6 +12,7 @@ Personal knowledge base for CTF competitions. Cross-category material lives at t
 
 - [cchef](tools/cchef.md) CyberChef on the command line
 - [CyberChef](tools/cyberchef.md) web app for encoding, decoding, hashing, and data analysis
+- [NetExec](tools/netexec.md) network service exploitation tool (CrackMapExec successor) for Windows/AD enumeration, auth, and lateral movement
 - [strings](tools/strings.md) print printable strings from any binary
 
 ## Cloud
