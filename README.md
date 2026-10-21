@@ -75,6 +75,7 @@ Personal knowledge base for CTF competitions. Cross-category material lives at t
 
 #### Tools
 
+- [Burp Suite](categories/web/tools/burp.md) intercepting proxy and manual web testing suite
 - [Gobuster](categories/web/tools/gobuster.md) directory, vhost, and DNS brute-force
 - [HTTPie](categories/web/tools/httpie.md) user-friendly HTTP client
 
