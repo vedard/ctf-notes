@@ -1,6 +1,6 @@
 # CTF Notes
 
-Personal knowledge base for CTF competitions. Cross-category material lives at the top level; category-specific material under [`categories/`](categories/). Conventions documented in [AGENTS.md](AGENTS.md).
+Personal knowledge base for CTF competitions. Conventions documented in [AGENTS.md](AGENTS.md).
 
 ## Cross-Category
 [references](references.md)
@@ -103,6 +103,7 @@ Personal knowledge base for CTF competitions. Cross-category material lives at t
 ### Tools
 
 - [Burp Suite](categories/web/tools/burp.md) intercepting proxy and manual web testing suite
+- [ffuf](categories/web/tools/ffuf.md) fast web fuzzer for paths, vhosts, parameters, and number ranges
 - [Gobuster](categories/web/tools/gobuster.md) directory, vhost, and DNS brute-force
 - [HTTPie](categories/web/tools/httpie.md) user-friendly HTTP client
 - [Hydra](categories/web/tools/hydra.md) online brute-forcer for login services
